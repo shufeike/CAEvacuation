@@ -45,11 +45,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\boost_1_55_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,12 +75,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="CellManager.cpp" />
+    <ClCompile Include="ClassRoom.cpp" />
     <ClCompile Include="Floor.cpp" />
+    <ClCompile Include="Human.cpp" />
+    <ClCompile Include="HumanManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="CellManager.h" />
+    <ClInclude Include="ClassRoom.h" />
+    <ClInclude Include="commantypes.h" />
+    <ClInclude Include="defines.h" />
     <ClInclude Include="Floor.h" />
+    <ClInclude Include="Human.h" />
+    <ClInclude Include="HumanManager.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Debug\ClassRooms.xml" />
+    <None Include="..\Debug\ClassSchedule.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

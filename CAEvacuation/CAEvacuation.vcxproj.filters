@@ -24,6 +24,21 @@
     <ClCompile Include="Floor.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ClassRoom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Human.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HumanManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CellManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell.h">
@@ -32,5 +47,33 @@
     <ClInclude Include="Floor.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ClassRoom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="commantypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Human.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CellManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Debug\ClassRooms.xml" />
+    <None Include="..\Debug\ClassSchedule.xml" />
   </ItemGroup>
 </Project>

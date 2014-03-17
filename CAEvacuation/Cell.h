@@ -17,11 +17,22 @@ public:
 	Cell(CellType type);
 	void init(int id, float pw, float pl, float ph, CellType type);
 	~Cell(void);
+	CellType GetType();
+	void SetShortestPathLength(long length);
+	long GetShortestPathLength();
 
+	bool HumanIn(){return humanIn;};
+	void SetHumanIn(bool val){humanIn = val;};
+
+	int GetHeight();
+	int GetPosX();
+	int GetPosY();
 private:
+	bool humanIn;
+	long stepsToExit;
 	CellType mCellType;
 	int mPosX;
 	int mPosY;
-	int mFloor;
+	int mHeight;
 };
 
